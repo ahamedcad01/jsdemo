@@ -1,51 +1,34 @@
- console.log("welcome to js");
+/* function switchcase(a) {
+    var val1=document.getElementById("v1").value;
+    var val2=document.getElementById("v2").value;
+    val1 =Number(val1);
+    val2 =Number(val2);
+    var v;
+    if (a != '/'){
+        switch(a){
+            case '+':
+            v = val1+val2;
+            break;
+            case '-':
+            v = val1-val2;
+            break;
+            case '*':
+            v = val1*val2;
+            break;
+        }
+    }else {
+        let x=val1 / val2;
+        let y= val1 % val2;
+        v =("quotient"+x+"reminder"+y);
+    }
+return document.getElementById("calc").innerHTML=v;
+} */
 
-var a = 10;
-let c = 20;
-
-const d = 3.14;
-
-
-a = true;
-console.log(typeof a);
-
-var b = parseInt(a);
-console.log(typeof b);
-
-
-var a = "100";
-console.log(typeof a);
-
-a  = parseInt(a);
-console.log(a,typeof a);
-
-var n = a.toString();
-console.log(n,typeof n);
-
-var v = 10;
-console.log(v++);
-var v1 = 20;
-console.log(v);
-var a = 10;
-var m = a << 2;
-console.log(m);
-
-
-function checkvalue(a){
-    console.log(a);
-    var a=Number(a);
-switch(a){
-
-    case 1:
-        console.log("formal collections");
-        break ;
-    case 2:
-        console.log("casual collections");
-        break ;
-    default:
-        console.log("main menu");
-        break ;
-
+function funcall(){
+    document.getElementById("uname").innerHTML=document.getElementById("Username").value;
+    document.getElementById("f1name").innerHTML=document.getElementById("fname").value;
+    document.getElementById("lasname").innerHTML=document.getElementById("lname").value;
+    document.getElementById("mail").innerHTML=document.getElementById("email").value;
+    document.getElementById("birthdate").innerHTML=document.getElementById("DOB").value;
+    document.getElementById("contact").innerHTML=document.getElementById("phone").value;
 }
-}
-checkvalue(prompt("enter value"));
