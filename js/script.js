@@ -32,3 +32,14 @@ function funcall(){
     document.getElementById("birthdate").innerHTML=document.getElementById("DOB").value;
     document.getElementById("contact").innerHTML=document.getElementById("phone").value;
 }
+
+
+function loops() {
+    var val= document.getElementById("inp").value;
+    for (val;val<=10;val++)
+    if(val<=9){
+        console.log(val);
+    }else{
+        console.log("loop stopped");
+    }
+}
